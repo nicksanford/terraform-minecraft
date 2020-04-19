@@ -155,7 +155,7 @@ resource "aws_iam_instance_profile" "minecraft" {
 
 resource "aws_instance" "main" {
   ami             = data.aws_ami.ubuntu.image_id
-  instance_type   = "t2.micro"
+  instance_type   = "t2.medium"
   security_groups = [aws_security_group.allow_all.id]
   key_name        = var.key_name
 

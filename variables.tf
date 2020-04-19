@@ -45,12 +45,12 @@ variable "mc_backup_freq" {
 // You'll want to tune these next two based on the instance type
 variable "java_ms_mem" {
   description = "Java initial and minimum heap size"
-  default     = "1G"
+  default     = "2G"
 }
 
 variable "java_mx_mem" {
   description = "Java maximum heap size"
-  default     = "1G"
+  default     = "2G"
 }
 
 // Instance vars
@@ -67,7 +67,7 @@ variable "ami" {
 // https://aws.amazon.com/ec2/instance-types/
 variable "instance_type" {
   description = "EC2 instance type/size - the default is not part of free tier!"
-  default     = "t2.micro"
+  default     = "t2.medium"
 }
 
 variable "allowed_cidrs" {
